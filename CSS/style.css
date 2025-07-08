@@ -1,0 +1,14 @@
+/* selector -- tagname,id,class name */
+        h3{
+            color:blue;
+        }
+        .box{
+            height: 300px;
+            width: 200px;
+            background-color: burlywood;
+        }
+        #xyz{
+            color: aqua;
+            font-weight: bold;
+            font-size: 20px;
+        }
