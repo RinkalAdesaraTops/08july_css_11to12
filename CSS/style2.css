@@ -1,0 +1,23 @@
+.box{
+    height: 200px;
+    width: 200px;
+    color: brown;
+    background-color: bisque;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: black; */
+    border:3px dotted blue;
+    /* T  R   B   L */
+    padding: 2px;
+    /* padding-left: 5px;
+    padding-right: ; */
+    box-sizing: border-box;
+    /* margin:auto; */
+    /* 200+6=206 */
+    /* 200 = 194 */
+}
+
+#txt{
+    text-align: center;
+    margin:auto;
+}
