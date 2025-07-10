@@ -1,7 +1,8 @@
 .box{
     height: 200px;
     width: 200px;
-    color: brown;
+    /*name,code - hexadecimal #, rgb function */
+    color: rgb(222 87 183);
     background-color: bisque;
     /* border-width: 2px;
     border-style: solid;
@@ -15,9 +16,23 @@
     /* margin:auto; */
     /* 200+6=206 */
     /* 200 = 194 */
+    float:left;
+    margin:10px
 }
-
-#txt{
+.fr{
+    float: right;
+}
+.cb{
+    clear:both
+}
+.brd{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 30% 50%;
+    border:2px solid black
+}
+/* #txt{
     text-align: center;
     margin:auto;
-}
+} */
