@@ -1,0 +1,21 @@
+.row{
+   width:1200px;
+   height:1200px;
+   border:2px solid black;
+   margin: auto; 
+   font-size: 130px;
+   text-align: center;
+   }
+.common{
+    height:150px;
+    width:150px;
+    /* border:2px solid black; */
+    float: left;
+}
+.black{
+    background-color:rgb(95, 0, 0);
+    
+
+.white{
+    background-color:white;
+}
