@@ -1,0 +1,16 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+.row
+{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction:column-reverse;
+    flex-wrap: wrap-reverse; */
+    flex-flow: column wrap-reverse;
+}
