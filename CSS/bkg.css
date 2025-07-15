@@ -1,0 +1,15 @@
+.box{
+    height: 900px;
+    width: 1200px;
+    border: 2px solid black;
+    background-image: url('featur-3.jpg');
+    background-repeat: no-repeat;
+    /* background-position: 30% 50%; */
+    /* background-color: aqua; */
+    background-attachment: fixed;
+    background-size: auto; 
+    /* //contain,cover */
+}
+p{
+    background: transparent;
+}
