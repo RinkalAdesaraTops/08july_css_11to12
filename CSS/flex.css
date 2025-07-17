@@ -4,13 +4,26 @@
     background-color: aqua;
     border: 1px solid black;
 }
+.b1{
+    order: 5;
+    flex-shrink: 4;
+    /* width: 200px; */
+}
+.b2{
+    flex-shrink: 4;
+    /* align-self: center; */
+}
 .row
 {
     height: 500px;
-    width: 500px;
+    width: 700px;
     border: 2px solid black;
     display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: stretch;
+    gap: 10px;
     /* flex-direction:column-reverse;
     flex-wrap: wrap-reverse; */
-    flex-flow: column wrap-reverse;
+    /* flex-flow: column wrap-reverse; */
 }
