@@ -9,10 +9,7 @@
     z-index: 1;
     background-color: blue;
     /*        X-axis(left-right) Y-axis(top-bottom) Blur color*/
-   box-shadow: 0px 10px 10px red
-                
-                
-               
+   box-shadow: 0px 10px 10px red             
 }
 
 .b2{
