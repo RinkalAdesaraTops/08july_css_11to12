@@ -1,0 +1,25 @@
+.box{
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border:2px solid black;
+    margin: 20px;
+    transition-duration: 2s;
+    /* transition-delay: 4s; */
+
+    /* transition:width 2s,height 4s; */
+}
+
+.box:hover{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* width:100px;
+    height: 60px; */
+    background-color: red;
+    /* transform:translate(60px,40px); */
+    /* scale - both(x,y) scaleX scaleY */
+    /* transform: scaleY(2) */
+    /* transform:rotateZ(90deg) */
+    transform: skew(25deg,25deg);
+}
