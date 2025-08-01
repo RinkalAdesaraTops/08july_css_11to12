@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 200px; /*200+4px+20p = 224  176+24*/
+            border: 2px solid black;
+            padding: 10px;
+            margin:5px;
+            display: inline-block;
+            /* content-box */
+            box-sizing: border-box; 
+            text-align: center;
+            
+        }
+        .b1{
+            visibility: hidden;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a:hover{
+            color: brown;
+        }
+        a:visited{
+            color: goldenrod;
+            text-decoration: underline dotted !important;
+        }
+        ul > li{
+            list-style-type: lower-roman;
+            list-style-position: outside;
+            list-style-image: url('../cart-page-header-img.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="box b1">lorem jfhkdg kdjgkdjg </div>
+    <div class="box">lorem jfhkdg kdjgkdjg </div>
+    <p>
+        <a href="#">Hiii</a>
+        <a href="index.html">HiiHello sdjghi</a>
+    </p>
+    <ul>
+        <li>dfgh</li>
+        <li>dfgh</li>
+        <li>dfgh</li>
+    </ul>
+</body>
+</html>
