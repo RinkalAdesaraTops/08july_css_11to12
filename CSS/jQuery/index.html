@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz{
+            color:red;
+            background-color:green
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin:10px;
+            border: 1px solid black;
+            position: absolute;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="demo"></div>
+    <p class="abc">lorem hjgjhdf</p>
+    <button onclick="disp()">Show</button>
+    <button onclick="hidemsg()">Hide</button>
+    <button id="txt">Add Xyz Class</button>
+    <div class="box"></div>
+    <button onclick="startANim()">Animation</button>
+    <script>
+        $(document).ready(function(){
+
+        })
+        $(window).load(function(){
+            
+        })
+        // document.getElementById('demo').innerHTML = "Hello"
+        $("#demo").html("<b>Hii</b>")
+        $("p").text("<b>jdhsgfsdjkhg  ksjgjksg</b>")
+        // $(".abc").css("color","blue")
+        // $(".abc").css("background-color","yellow")
+        $(".abc").css({
+            color:"blue",
+            backgroundColor:'yellow'
+        })
+
+        $(".xyz").css({
+            color:"red",
+            backgroundColor:'green'
+        })
+        function disp(){
+            $("p").show()
+        }
+        function hidemsg(){
+            $("p").hide()
+        }
+
+        $("#txt").click(function(){
+            // jQuery Chaining
+            $("p").removeAttr('style').removeClass('abc').addClass('xyz')
+            // $("p").removeAttr('style')
+            // $("p").removeClass('abc')
+            // $("p").addClass('xyz')
+        })
+        function startANim(){
+            $(".box").animate({
+                left:"250px",
+                height:"200px",
+                width:"200px",
+                opacity:"0.4"
+            })
+        }
+        // $("#txt1").click(function(){
+
+        // })
+    </script>
+</body>
+</html>
