@@ -1,9 +1,10 @@
-spreading,merging & destructuring
-
-localstorage crud
+spreading,merging & destructuring & rest of operator 
+----------------------------------------
+eventListener
+High order function
+exception  
+-----------------------------------
 oops
 callback-hell-promises-async-await
-exception 
 
-High order function
-eventListener
+localstorage crud
