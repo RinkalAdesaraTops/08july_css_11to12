@@ -1,7 +1,9 @@
 spreading,merging & destructuring & rest of operator 
-----------------------------------------
 eventListener
 High order function
+----------------------------------------
+
+
 exception  
 -----------------------------------
 oops
