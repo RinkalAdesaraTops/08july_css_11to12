@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // promises 
+        let pr = new Promise((rs,rj)=>{
+            //rs("Promise completed")
+            rj("Promise cancelled...")
+        }).then((msg)=>console.log(msg))
+        .catch((err)=>console.log("Error is "+err))
+        let age = 17
+        pr = new Promise((rs,rj)=>{
+            if(age>=18){
+                rs("Eligible 4 vote")
+            } else {
+                rj("Not Eligible 4 vote")
+            }
+        }).then((msg)=>console.log(msg))
+        .catch((msg)=>console.log(msg))
+        // pending
+        // fulfilled
+        //rejected
+
+        // async-await
+        // const add = async(func)=>{
+        //     await func()
+        // }
+        // const func=()=>{
+        //     fdjhgjkdghkjd
+        //     abc()
+        // }
+        // const abc = ()=>{
+
+        // }
+        // add()
+    </script>
+</body>
+</html>

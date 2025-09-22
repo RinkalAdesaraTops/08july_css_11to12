@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class 
+        // object - runtime entity
+        // constructor - default,parameterized
+        class user{
+            constructor(a,b){
+                this.name = a
+                this.age = b
+            }
+            disp(){
+                document.write('<br>Name is '+this.name)
+                document.write('<br>Age is '+this.age)
+            }
+        }
+        let name = prompt("Enter name")
+        let u1 = new user(name,26)
+        u1.disp()
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // inheritance - reusability
+        class abc { //parent/super/Base class
+            constructor() {
+                this.a=25
+                this.b=10
+                console.log('parent constructor called..');
+            }
+            disp(){
+                document.write('<br>Parent class called..')
+                document.write('<br>Addition is '+(this.a + this.b))
+            }
+        }
+        class xyz extends abc { //child/sub/derived class
+            constructor() {
+                super() //to access parent class 
+                console.log('child constructor called..');
+            }
+            disp1(){
+                document.write('<br>child class called..')
+            }
+        }
+        let x1 = new xyz()
+        x1.disp()
+        x1.disp1()
+    </script>
+</body>
+
+</html>
