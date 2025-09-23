@@ -1,12 +1,18 @@
+let var const 
+array function
+string function
 spreading,merging & destructuring & rest of operator 
 eventListener
 High order function
 ----------------------------------------
-
-
-exception  
------------------------------------
-oops
 callback-hell-promises-async-await
-validation js- 
+exception 
+oops
+1)class - object
+2)inheritance 
+3)polymorphism
+4)data abstraction & encapsulation
+constructor - 2 types - default & parameterized 
+-----------------------------------
+validation js
 localstorage crud

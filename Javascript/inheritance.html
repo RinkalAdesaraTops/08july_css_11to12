@@ -9,6 +9,7 @@
 
 <body>
     <script>
+        // polymorphism - one name - multiple form
         // inheritance - reusability
         class abc { //parent/super/Base class
             constructor() {
@@ -26,13 +27,16 @@
                 super() //to access parent class 
                 console.log('child constructor called..');
             }
-            disp1(){
+            disp(){
+                super.disp()
                 document.write('<br>child class called..')
             }
         }
         let x1 = new xyz()
         x1.disp()
-        x1.disp1()
+        // x1.disp1() //public private protected
+        //data abstraction - data hiding
+        // Encapsulation - wrapping up of data into single unit
     </script>
 </body>
 
