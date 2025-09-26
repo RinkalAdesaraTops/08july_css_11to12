@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" name="frm" method="post" onsubmit="return checkData()">
+        <label for="">Name:</label>
+        <input type="text" name="name" id="name"> 
+        <span id="nameErr" class="error"></span> <br><br>
+
+        <label for="">Mobile Number:</label>
+        <input type="text" name="mob" id="mob">
+        <span id="mobErr" class="error"></span><br><br>
+
+        <label for="">Email:</label>
+        <input type="email" name="email" id="email">
+        <span id="emailErr" class="error"></span><br><br>
+
+        <label for="">Password:</label>
+        <input type="password" name="pwd" id="pwd">
+        <span id="pwdErr" class="error"></span><br><br>
+
+        <input type="submit" value="Save">
+    </form>
+    <script>
+        const checkData = () => {
+            document.getElementById('nameErr').innerHTML = ''
+            document.getElementById('mobErr').innerHTML=''
+            document.getElementById('emailErr').innerHTML=''
+            document.getElementById('pwdErr').innerHTML =''
+            let nm = document.frm.name.value
+            let mb = document.frm.mob.value
+            let email = document.frm.email.value
+            let pwd = document.frm.pwd.value
+            let status = 0
+            if (nm == "") {
+                document.getElementById('nameErr').innerHTML = "Plz enter name"
+                status = 1
+                // return false
+            }
+            if(nm!="" && (nm.length<2 || nm.length>10)){
+                document.getElementById('nameErr').innerHTML = "Name must be between 2 to 10 characters"
+                status=1
+            }
+            var ptrn =/^[A-Za-z]+$/
+            if(nm!='' && !ptrn.test(nm)){
+                document.getElementById('nameErr').innerHTML = "Must enter alphabetics not use digit"
+                status=1
+            }
+            mob_ptr = /^[0-9]{10,12}$/
+            if (mb == "") {
+                document.getElementById('mobErr').innerHTML = "Plz enter mobile"
+                status = 1
+                // return false
+            }
+            if(mb!="" && !(mob_ptr.test(mb))){
+                document.getElementById('mobErr').innerHTML = "Mobile number must be digits only & min-10 & max-12 allowed"
+                status = 1
+            }
+            if (email == "") {
+                document.getElementById('emailErr').innerHTML = "Plz enter email"
+                status = 1
+                // return false
+            }
+            if (pwd == "") {
+                // pwd - capital small digits special characters
+                document.getElementById('pwdErr').innerHTML = "Plz enter password"
+                status = 1
+                // return false
+            }
+
+            if(status == 0){
+                return true
+            } else {
+                return false
+            }
+            // return true
+        }
+    </script>
+</body>
+
+</html>
