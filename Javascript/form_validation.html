@@ -23,7 +23,7 @@
         <span id="mobErr" class="error"></span><br><br>
 
         <label for="">Email:</label>
-        <input type="email" name="email" id="email">
+        <input type="text" name="email" id="email">
         <span id="emailErr" class="error"></span><br><br>
 
         <label for="">Password:</label>
@@ -72,12 +72,41 @@
                 status = 1
                 // return false
             }
+            var email_ptn = /^[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,3}$/
+            // console.log(email_ptn.test(email))
+            // return false
+            if(email!="" && !email_ptn.test(email)){
+                document.getElementById('emailErr').innerHTML = "Plz enter valid email"
+                status = 1
+            }
             if (pwd == "") {
                 // pwd - capital small digits special characters
                 document.getElementById('pwdErr').innerHTML = "Plz enter password"
                 status = 1
                 // return false
             }
+            
+            //abc@123
+            ptn = /[0-9]/
+            ptn1 = /[A-Z]/
+            ptn2 = /[a-z]/
+            ptn3= /[!@#$%^&*()\-+.]/
+            if(pwd!="" && !ptn.test(pwd)){
+                document.getElementById('pwdErr').innerHTML += "<br>Pwd must have one digit "
+                status = 1
+            } 
+            if(pwd!="" && !ptn1.test(pwd)){
+                document.getElementById('pwdErr').innerHTML += "<br>Pwd must have one capital "
+                status = 1
+            } 
+            if(pwd!="" && !ptn2.test(pwd)){
+                document.getElementById('pwdErr').innerHTML += "<br>Pwd must have one small character "
+                status = 1
+            } 
+            if(pwd!="" && !ptn3.test(pwd)){
+                document.getElementById('pwdErr').innerHTML += "<br>Pwd must have one special character "
+                status = 1
+            } 
             if(status == 0){
                 return true
             } else {
