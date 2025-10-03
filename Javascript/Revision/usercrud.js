@@ -10,7 +10,7 @@ const saveData = () => {
     let userid = document.frm.userid.value
     let alldata = JSON.parse(localStorage.getItem("UserData"))
     if (userid != '') {
-        //updtae
+        //updtaer
         userData = alldata.map((i)=>{
                         if(i.id == userid){
                             i.name = nm
