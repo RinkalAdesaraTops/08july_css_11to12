@@ -17,26 +17,34 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-6"></div>       
+                <div class="col-4">
+                    <input type="search" name="srcdata" id="srcdata" class="form-control">               
+                </div>
+                <div class="col-2"><button class="btn btn-info" onclick="searchData()">Search</button></div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-6">
                 <h4>User Form</h4>
                 <form name="frm" method="post" action="#">
                     <input type="hidden" name="userid" id="userid">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="username" name="username">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Age:</label>
-                   <input type="number" class="form-control" id="age" name="age">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Salary:</label>
-                   <input type="number" class="form-control" id="salary" name="salary">
-                </div>
-                <div class="mb-3">
-                    <button type="button" class="btn btn-primary" onclick="saveData()">Save</button>
-                    <button type="reset" class="btn btn-danger">Cancel</button>
-                </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Salary:</label>
+                        <input type="number" class="form-control" id="salary" name="salary">
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary" onclick="saveData()">Save</button>
+                        <button type="reset" class="btn btn-danger">Cancel</button>
+                    </div>
                 </form>
             </div>
             <div class="col-6">

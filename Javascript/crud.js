@@ -38,8 +38,11 @@ const saveData = () => {
 const disp = () => {
     let dt = localStorage.getItem("userinfo")
     let res = JSON.parse(dt)
+    dispTable(res)
+}
+const dispTable = (data)=>{
     let tr = ''
-    res.map((i) => {
+    data.map((i) => {
         tr += `<tr>
                 <td>${i.id}</td>
                 <td>${i.name}</td>
@@ -73,5 +76,16 @@ const editData = (id) => {
     document.frm.username.value = res.name
     document.frm.salary.value = res.salary
     document.frm.userid.value = id
+}
+const searchData = ()=>{
+    let txt = document.getElementById('srcdata').value
+    let alldata = JSON.parse(localStorage.getItem('userinfo'))
+    let res = alldata.filter((i)=>{
+            if(i.name.includes(txt) || i.age.includes(txt)){
+                return i
+            }
+    })
+    dispTable(res)
+
 }
 disp()
