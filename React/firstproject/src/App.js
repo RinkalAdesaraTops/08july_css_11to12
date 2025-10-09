@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Firstcomponent from './Firstcomponent';
 import { Fragment } from 'react/jsx-runtime';
+import Secondcomponent from './Secondcomponent';
+import StateExample from './StateExample';
 
 function App() {
   let name="abc"
@@ -11,24 +13,16 @@ function App() {
     alert("Hiii...........")
   }
   return (
-    // jsx - javascript & xml
-    // <React.Fragment>
-    // <Fragment>
     <>
     <div>     
       <h3>My First React Project</h3>
-      <h4>Name is -- {name}</h4>
-      <h4>Age is -- {age}</h4>
-      <h4>Salary is -- {salary}</h4>
-      <button onClick={disp}>Add</button>
     </div>
     <div>
-      <Firstcomponent />
+      {/* <Firstcomponent />
+      <Secondcomponent myname={name} myage={age} sal={salary} /> */}
+      <StateExample />
     </div>
     </>
-    // </Fragment>
-    // {/* </React.Fragment> */}
-    
   );
 }
 
